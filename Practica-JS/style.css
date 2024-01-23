@@ -1,0 +1,69 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #0a0a0a;
+    color: #ffffff;
+}
+
+.container {
+    text-align: center;
+    line-height: 1.5;
+    letter-spacing: 1px;
+    color: #66ccff;
+    margin: 20px;
+    padding: 20px;
+    border: 2px solid #66ccff;
+    border-radius: 10px;
+}
+
+h1 {
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+p {
+    margin-bottom: 20px;
+}
+
+/* Estilos adicionales para un mejor aspecto */
+h1, p {
+    font-family: 'Roboto', 'Arial', sans-serif;
+}
+
+/* Estilos para los elementos input */
+input {
+    width: 100%; /* Todos los inputs tendrán el mismo ancho del contenedor */
+    padding: 10px; /* Agrega relleno para mejorar la apariencia */
+    margin-bottom: 15px; /* Agrega espacio entre los inputs */
+    box-sizing: border-box; /* Incluye el relleno en el ancho total */
+    border: 1px solid #66ccff; /* Agrega un borde alrededor de los inputs */
+    border-radius: 5px; /* Agrega esquinas redondeadas a los inputs */
+    background-color: #0a0a0a; /* Color de fondo oscuro */
+    color: #ffffff; /* Color del texto blanco */
+}
+
+/* Estilos adicionales para el botón */
+button {
+    padding: 10px 20px; /* Ajusta el relleno del botón */
+    font-size: 1em; /* Tamaño de fuente del botón */
+    border: none; /* Elimina el borde predeterminado */
+    border-radius: 5px; /* Agrega esquinas redondeadas al botón */
+    background-color: #66ccff; /* Color de fondo del botón */
+    color: #0a0a0a; /* Color del texto del botón */
+    cursor: pointer; /* Cambia el cursor al pasar por encima del botón */
+    transition: background-color 0.3s ease; /* Agrega una transición suave al color de fondo */
+}
+
+button:hover {
+    background-color: #3366cc; /* Cambia el color de fondo al pasar el ratón */
+}
