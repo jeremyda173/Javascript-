@@ -1,0 +1,95 @@
+*{
+
+margin: 0;
+padding: 0;
+outline: none;
+box-sizing: border-box;
+
+}
+
+body{
+
+font-family:'Times New Roman', Times, serif;
+display: flex;
+justify-content: center;
+align-items:center;
+min-height: 100vh;
+background: rgb(186, 186, 186);
+
+}
+
+body div.micalcu{
+
+ text-align: center;
+ justify-content: center;
+ align-items: center;
+ width:240px;
+ margin: 0 auto;
+ background: rgb(124, 139, 186);
+ border-radius: 10px;
+
+}
+
+div input[type='button'], button{
+
+ width: 40px;
+ height: 40px;
+ margin: 3px 0;
+ cursor: pointer;
+
+}
+
+div input[ type = 'text']{
+
+ height: 40px;
+ width: 200px;
+ background-color: #F2EBD5;
+ color: black;
+ padding: 12px 20px;
+ margin-top: 20px;
+ margin-bottom: 20px;
+ box-sizing: border-box;
+ border-radius: 4px;
+ border: 2px solid #fea3a3;
+
+}
+
+div .resultado input, div.resultado button{
+
+ height: 40px;
+ width: 85px;
+ margin-top: 2px;
+ margin-bottom: 8px;
+ border-radius: 4px;
+
+}
+
+div.resultado button{
+
+ background-color: rgb(212, 0, 0);
+ color: black;
+ border: 1px solid #777;
+ font-size: 16px;
+ text-align: center;
+ cursor: pointer;
+
+}
+
+div.resultado button:hover{
+  background-color: rgb(189, 75, 75);
+  
+}
+
+input.clicked {
+    background-color: #000000; /* Color cuando se hace clic */
+  }
+
+#suma, #resta, #multiplicacion, #division, #porcentaje{
+
+    background-color: rgb(121, 121, 121);
+    color: black;
+    border: 1px solid #777;
+    font-size: 16px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+}
