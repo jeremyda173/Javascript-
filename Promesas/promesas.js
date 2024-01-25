@@ -22,6 +22,9 @@ const Data = [{
 
 const getData = () => {
     return new Promise((resolve, _reject) => {
+        if (Data.length < 1){
+            setTimeout(() => resolve('No data available'), 2000);
+        }
         setTimeout(()=>{
             resolve(Data);
             }, 2000);
@@ -30,6 +33,11 @@ const getData = () => {
 getData().then((Data) => console.log(Data) + console.log("Finally we got the data"));
 
 console.log(getData());
+
+async function AsincData(){
+    const dataFetched = await getData();
+    console.log(dataFetched);
+}
 
 
 // console.log("Inicio de la operación");
