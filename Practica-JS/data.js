@@ -33,7 +33,6 @@ function OptenData() {
     .then(response => response.text())
     .then(data => {
         console.log(data);
-        // Puedes agregar aquí cualquier lógica adicional después de guardar los datos en el servidor
     })
     .catch(error => {
         console.error('Error al enviar datos al servidor:', error);
