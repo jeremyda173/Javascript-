@@ -16,7 +16,7 @@ const db = mysql.createConnection({
     password: 'jeremy12345JL30',
     database: 'UserData',
     port: 3306,
-    ssl: null // Desactiva el cifrado SSL
+    ssl: null
 });
 db.connect(err => {
     if (err) {
@@ -51,3 +51,5 @@ app.post('/guardarDatos', (req, res) => {
 app.listen(PORT, () => {
     console.log(`Servidor escuchando en http://localhost:${PORT}`);
 });
+
+// Para encender la conexion, debes de ejecutar node server.js
