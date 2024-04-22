@@ -1,13 +1,29 @@
+var expression = [];
+
 function valor(x) {
-    document.getElementById('display').value += x;
+    expression.push(x);
+    actualizarDisplay();
 }
 
-function borrardisplay(y) {
-    document.getElementById('display').value = y;
+function actualizarDisplay() {
+    document.getElementById('display').value = expression.join('');
+}
+
+function borrardisplay() {
+    expression = [];
+    actualizarDisplay();
 }
 
 function cal_resultado() {
-    var result = eval(document.getElementById('display').value);
-    document.getElementById('display').value = result;
+    var resultado = '';
+    try {
+        var exprString = expression.join('');
+        resultado = eval(exprString);
+    } catch (error) {
+        if (error instanceof SyntaxError) {
+            resultado = 'Error';
+        }
+    }
+    document.getElementById('display').value = resultado;
+    expression = [];
 }
-
