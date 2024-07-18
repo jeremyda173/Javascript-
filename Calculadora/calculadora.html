@@ -10,18 +10,17 @@
     <div class="calculator">
         <form name="calculadora" id="calculadora">
                 <input type="text" name="display" id="display" readonly>
-                
                 <div class="buttons-row">
                     <input type="button" class="button" value="1" onclick="valor('1')">
                     <input type="button" class="button" value="2" onclick="valor('2')">
                     <input type="button" class="button" value="3" onclick="valor('3')">
-                    <input type="button" class="operator" value="+" onclick="valor('+')">
+                    <input type="button" class="operator" id="plus" value="+" onclick="valor('+')">
                 </div>
                 <div class="buttons-row">
                     <input type="button" class="button" value="4" onclick="valor('4')">
                     <input type="button" class="button" value="5" onclick="valor('5')">
                     <input type="button" class="button" value="6" onclick="valor('6')">
-                    <input type="button" class="operator" value="-" onclick="valor('-')">
+                    <input type="button" class="operator" id="minus" value="-" onclick="valor('-')">
                 </div>
                 <div class="buttons-row">
                     <input type="button" class="button" value="7" onclick="valor('7')">
