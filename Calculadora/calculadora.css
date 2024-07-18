@@ -31,6 +31,10 @@
   border-radius: 5px;
 }
 
+#plus{
+  background: #d9ff00;
+}
+
 .equal,
 .clear {
   width: 70px;
