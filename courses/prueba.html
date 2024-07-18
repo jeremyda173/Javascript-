@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="./public/icon.png" type="image/x-icon" />
+    <title>Login</title>
+    <style>
+      body {
+        background-color: black;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+        text-align: center;
+      }
+
+      .container {
+        background-color: rgb(37, 37, 37);
+        color: rgb(255, 255, 255);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 40px;
+        border-radius: 8px;
+        width: 90%;
+        max-width: 400px;
+      }
+
+      .container:hover {
+        transition: 1.5s;
+        filter: opacity(90%);
+        /* transform: rotate(180deg); */
+      }
+
+      .formulario {
+        background-color: rgb(70, 70, 70);
+        color: rgb(255, 255, 255);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+        border-radius: 4px;
+        width: 100%;
+      }
+
+      .formulario:hover{
+       filter: drop-shadow(0 0 6.75rem rgb(255, 255, 255)); 
+       transition: 1.5s;
+        /* transform: rotate(1deg); */
+      }
+
+      .formulario label,
+      .formulario input {
+        width: 100%;
+        margin-bottom: 10px;
+      }
+
+      .formulario input{
+        background-color: rgb(44, 44, 44);
+        border: none;
+      }
+
+      input {
+        padding: 8px;
+        border: 1px solid #ffffff;
+        border-radius: 4px;
+        color: white;
+      }
+
+      input[type="date"] {
+        padding: 8px;
+        /* border: 1px solid #ffffff; */
+        border-radius: 4px;
+        color: white;
+      }
+
+      button {
+        font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+          "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+        border: 2px solid #ffff;
+        padding: 8px 16px;
+        border-radius: 8px;
+        background-color: rebeccapurple;
+        color: white;
+        cursor: pointer;
+      }
+
+      button:hover {
+        background-color: blueviolet;
+        transition-duration: 1.2s;
+        transform: scale(1, 1.2) rotate(8deg);
+      }
+
+          /* Media Queries */
+    @media (max-width: 600px) {
+      .container {
+        padding: 20px;
+      }
+
+      .formulario {
+        padding: 10px;
+      }
+
+      input {
+        padding: 6px;
+      }
+
+      button {
+        padding: 6px 12px;
+      }
+    }
+
+    @media (max-width: 400px) {
+      .container {
+        width: 100%;
+        padding: 10px;
+      }
+
+      .formulario {
+        padding: 5px;
+      }
+
+      input {
+        padding: 4px;
+      }
+
+      button {
+        padding: 4px 8px;
+      }
+    }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Java Scritp</h1>
+      <div class="formulario">
+        <label>Teléfono:</label>
+        <input type="text" />
+        <label>Edad:</label>
+        <input type="number" />
+        <label>Fecha:</label>
+        <input type="date" />
+        <button type="button">Submit</button>
+      </div>
+    </div>
+    <script>
+    //   var nameEsp = 18;
+    //   var nameFab = "Jeremy Smith";
+    //   var name;
+
+      // Simulación de entrada del nombre (descomentar si se necesita)
+      // name = prompt('Ingrese la edad de Jeremy Smith: ');
+
+      // if (name >= nameEsp) {
+      //   document.write("Nombre: " + name + ". ¡Eres mayor de edad!");
+      // } else {
+      //   document.write("Nombre: " + name + ". ¡Eres menor de edad!");
+      // }
+    </script>
+  </body>
+</html>
