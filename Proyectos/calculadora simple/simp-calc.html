@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            font-family: 'Roboto', sans-serif;
+            background-color: #f0f0f0; /* Color de fondo de la página */
+        }
+
+        .calculadora {
+            background-color: #ffffff; /* Color de fondo de la calculadora */
+            border-radius: 15px;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+            width: 360px;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .display {
+            background-color: #333333; /* Fondo oscuro para el display */
+            color: #ffffff; /* Color del texto */
+            padding: 20px;
+            text-align: right;
+            font-size: 2em;
+            box-sizing: border-box;
+            border-bottom: 2px solid #00bcd4; /* Color de la línea inferior */
+        }
+
+        .button-line {
+            display: flex;
+            flex-wrap: wrap;
+            width: 100%;
+        }
+
+        .button {
+            background-color: #f9f9f9; /* Color de fondo de los botones */
+            border: 1px solid #dddddd; /* Borde de los botones */
+            padding: 20px;
+            font-size: 1.4em;
+            cursor: pointer;
+            transition: background-color 0.2s, box-shadow 0.2s;
+            text-align: center;
+            flex: 1;
+            min-width: calc(25% - 2px); /* Ajusta el tamaño del botón */
+            box-sizing: border-box;
+        }
+
+        .button:active {
+            background-color: #e0e0e0; /* Color de fondo cuando se presiona el botón */
+            box-shadow: inset 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .button.operator {
+            background-color: #ff5722; /* Color de fondo para los operadores */
+            color: white;
+        }
+
+        .button.operator:active {
+            background-color: #e64a19; /* Color de fondo cuando se presiona el operador */
+        }
+
+        .button.clear {
+            background-color: #e91e63; /* Color de fondo para el botón de limpiar */
+            color: white;
+        }
+
+        .button.clear:active {
+            background-color: #c2185b; /* Color de fondo cuando se presiona el botón de limpiar */
+        }
+
+        .button.double {
+            flex: 1; /* Hace que el botón 0 ocupe el doble de espacio que los demás botones */
+        }
+
+        .button-line:nth-child(4) .button.double {
+            min-width: calc(50% - 2px); /* Ajusta el tamaño del botón 0 */
+        }
+    </style>
+</head>
+<body>
+    <div class="calculadora">
+        <div class="display" id="display"></div>
+        <div class="button-line">
+            <input type="button" class="button clear" value="C" onclick="clearDisplay()">
+            <input type="button" class="button operator" value="/" onclick="appendToDisplay('/')">
+            <input type="button" class="button operator" value="*" onclick="appendToDisplay('*')">
+            <input type="button" class="button operator" value="-" onclick="appendToDisplay('-')">
+        </div>
+        <div class="button-line">
+            <input type="button" class="button" value="7" onclick="appendToDisplay('7')">
+            <input type="button" class="button" value="8" onclick="appendToDisplay('8')">
+            <input type="button" class="button" value="9" onclick="appendToDisplay('9')">
+            <input type="button" class="button operator" value="+" onclick="appendToDisplay('+')">
+        </div>
+        <div class="button-line">
+            <input type="button" class="button" value="4" onclick="appendToDisplay('4')">
+            <input type="button" class="button" value="5" onclick="appendToDisplay('5')">
+            <input type="button" class="button" value="6" onclick="appendToDisplay('6')">
+            <input type="button" class="button" value="." onclick="appendToDisplay('.')">
+        </div>
+        <div class="button-line">
+            <input type="button" class="button double" value="0" onclick="appendToDisplay('0')">
+            <input type="button" class="button" value="1" onclick="appendToDisplay('1')">
+            <input type="button" class="button" value="2" onclick="appendToDisplay('2')">
+            <input type="button" class="button" value="3" onclick="appendToDisplay('3')">
+        </div>
+        <div class="button-line">
+            <input type="button" class="button operator" value="=" onclick="calculateResult()">
+        </div>
+    </div>
+    <script>
+        function appendToDisplay(value) {
+            document.getElementById('display').innerText += value;
+        }
+
+        function clearDisplay() {
+            document.getElementById('display').innerText = '';
+        }
+
+        function calculateResult() {
+            try {
+                const result = eval(document.getElementById('display').innerText);
+                document.getElementById('display').innerText = result;
+            } catch (e) {
+                document.getElementById('display').innerText = 'Error';
+            }
+        }
+    </script>
+</body>
+</html>
