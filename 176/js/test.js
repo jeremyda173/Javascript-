@@ -63,10 +63,25 @@ const TheFunctionFlecha = (a, b) => {
 }  
 console.log(TheFunctionFlecha(3,1));
 
+const DataOld = () => {
+    // document.getElementById("data").innerHTML="";
+    return "Hello, world!!";
+}
+DataOld();
+
+const FuncionesOneLine = () => {
+    console.log("Function the one line");
+}
+FuncionesOneLine();
+const FuncionesTwoLine = (data) => {
+    // console.log("Function the one line");
+    const line = data
+    return line
+}
+console.log(FuncionesTwoLine("Something"));
+
 // export default function LlamarJaimito(){
-
 //     return(
-
 //     );
 // }
 
