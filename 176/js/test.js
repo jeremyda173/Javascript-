@@ -81,7 +81,7 @@ const FuncionesTwoLine = (data) => {
 console.log(FuncionesTwoLine("Something"));
 
 const FuncionesThreeLine = (da) => da = "Queso";
-console.log(FuncionesThreeLine(da));
+console.log(FuncionesThreeLine());
 
 const FuncionesFourLine = () => ({nombre: "Funciones", edad: 54});
 console.log(FuncionesFourLine());
@@ -91,3 +91,19 @@ console.log(FuncionesFourLine());
 // }
 
 FirstFunction();
+
+
+
+// Funciones callback = Los callbacks aseguran que una función no se va a ejecutar antes de que se complete una tarea, sino que se ejecutará justo después de que la tarea se haya completado.
+
+function CallBacksFunctions (name, edad, funcion) {
+    name = name;
+    edad = edad;
+    let cliente = name + " de " + edad + " years old"
+    funcion (cliente);
+}
+ function Traer(Cliente) {
+    console.log(`El nuevo cliente es: ${Cliente}`);
+ }
+ CallBacksFunctions("Eduardo", 21, Traer);
+// console.log(CallBacksFunctions());
