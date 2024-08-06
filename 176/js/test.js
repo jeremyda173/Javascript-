@@ -80,6 +80,11 @@ const FuncionesTwoLine = (data) => {
 }
 console.log(FuncionesTwoLine("Something"));
 
+const FuncionesThreeLine = (da) => da = "Queso";
+console.log(FuncionesThreeLine(da));
+
+const FuncionesFourLine = () => ({nombre: "Funciones", edad: 54});
+console.log(FuncionesFourLine());
 // export default function LlamarJaimito(){
 //     return(
 //     );
