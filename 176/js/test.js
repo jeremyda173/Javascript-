@@ -106,3 +106,4 @@ function CallBacksFunctions (name, edad, funcion) {
     console.log(`El nuevo cliente es: ${Cliente}`);
  }
  CallBacksFunctions("Eduardo", 21, Traer);
+// console.log(CallBacksFunctions());
