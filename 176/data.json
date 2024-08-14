@@ -1,0 +1,152 @@
+[
+    {
+        "nombre": "Juana",
+        "edad": 21,
+        "numero": "0-000-000-0000"
+    },
+    {
+        "nombre": "Carlos",
+        "edad": 34,
+        "numero": "1-234-567-8901"
+    },
+    {
+        "nombre": "María",
+        "edad": 29,
+        "numero": "2-345-678-9012"
+    },
+    {
+        "nombre": "Luis",
+        "edad": 45,
+        "numero": "3-456-789-0123"
+    },
+    {
+        "nombre": "Ana",
+        "edad": 37,
+        "numero": "4-567-890-1234"
+    },
+    {
+        "nombre": "Jorge",
+        "edad": 26,
+        "numero": "5-678-901-2345"
+    },
+    {
+        "nombre": "Elena",
+        "edad": 32,
+        "numero": "6-789-012-3456"
+    },
+    {
+        "nombre": "Pablo",
+        "edad": 41,
+        "numero": "7-890-123-4567"
+    },
+    {
+        "nombre": "Sofía",
+        "edad": 23,
+        "numero": "8-901-234-5678"
+    },
+    {
+        "nombre": "Roberto",
+        "edad": 39,
+        "numero": "9-012-345-6789"
+    },
+    {
+        "nombre": "Lucía",
+        "edad": 27,
+        "numero": "0-123-456-7890"
+    },
+    {
+        "nombre": "Miguel",
+        "edad": 50,
+        "numero": "1-234-567-8902"
+    },
+    {
+        "nombre": "Raquel",
+        "edad": 22,
+        "numero": "2-345-678-9013"
+    },
+    {
+        "nombre": "Andrés",
+        "edad": 48,
+        "numero": "3-456-789-0124"
+    },
+    {
+        "nombre": "Teresa",
+        "edad": 30,
+        "numero": "4-567-890-1235"
+    },
+    {
+        "nombre": "Fernando",
+        "edad": 38,
+        "numero": "5-678-901-2346"
+    },
+    {
+        "nombre": "Marta",
+        "edad": 24,
+        "numero": "6-789-012-3457"
+    },
+    {
+        "nombre": "Ricardo",
+        "edad": 43,
+        "numero": "7-890-123-4568"
+    },
+    {
+        "nombre": "Patricia",
+        "edad": 28,
+        "numero": "8-901-234-5679"
+    },
+    {
+        "nombre": "Gabriel",
+        "edad": 33,
+        "numero": "9-012-345-6780"
+    },
+    {
+        "nombre": "Carmen",
+        "edad": 35,
+        "numero": "0-123-456-7891"
+    },
+    {
+        "nombre": "Alberto",
+        "edad": 40,
+        "numero": "1-234-567-8903"
+    },
+    {
+        "nombre": "Natalia",
+        "edad": 31,
+        "numero": "2-345-678-9014"
+    },
+    {
+        "nombre": "Francisco",
+        "edad": 47,
+        "numero": "3-456-789-0125"
+    },
+    {
+        "nombre": "Julia",
+        "edad": 25,
+        "numero": "4-567-890-1236"
+    },
+    {
+        "nombre": "Pedro",
+        "edad": 44,
+        "numero": "5-678-901-2347"
+    },
+    {
+        "nombre": "Isabel",
+        "edad": 36,
+        "numero": "6-789-012-3458"
+    },
+    {
+        "nombre": "David",
+        "edad": 42,
+        "numero": "7-890-123-4569"
+    },
+    {
+        "nombre": "Laura",
+        "edad": 29,
+        "numero": "8-901-234-5670"
+    },
+    {
+        "nombre": "José",
+        "edad": 49,
+        "numero": "9-012-345-6781"
+    }
+]
