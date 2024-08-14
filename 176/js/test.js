@@ -107,3 +107,71 @@ function CallBacksFunctions (name, edad, funcion) {
  }
  CallBacksFunctions("Eduardo", 21, Traer);
 // console.log(CallBacksFunctions());
+
+let cadena = "31";
+console.log(cadena +' es un '+ typeof cadena);
+console.log(cadena.length);
+// Los strings son inmutables
+console.log(cadena.substring(0, cadena.length - 1));
+console.log(cadena[0] + ' ' + cadena[1]);
+console.log(cadena[cadena.length - 1]);
+
+let cadena2 = new String ('La vida es bella');
+console.log(typeof cadena2);
+
+let cadena3 = new Number (234);
+console.log(typeof cadena2);
+
+console.log(cadena2.toLowerCase());
+console.log(cadena2.toUpperCase());
+
+console.log (cadena2);
+
+//Metodo Trim String
+console.log(cadena2.trim());
+
+//String indexOf
+let venganza = "Hoy me vengare de vos, retrasado";
+console.log(venganza.indexOf('o', 2));
+
+//Metodo slice
+let slice = "Klk mi gente"
+console.log(slice.slice(0,2));
+
+let ExampleReplace = "Hola gente";
+console.log(ExampleReplace.replace("Hola", "klk"));
+
+// Caracteres de escape
+// \'
+// \"
+// \n
+// \t
+// \\
+
+let mensaje = "Hola mi gente,\n como estais \'pendejos'\. \t Bobo el que lo lea";
+console.log(mensaje);
+
+const variavs = null;
+const varia = undefined;
+console.log(variavs);
+console.log(varia);
+
+console.log(Math.PI);
+// cantidad de decimales que deseo mostrar
+console.log(Math.PI.toFixed(2));
+// redondea el numero al numero entero mas cercano
+console.log(Math.round(Math.PI));
+// elimina los decimales
+console.log(Math.floor(Math.PI));
+// valor absoluto
+console.log(Math.abs(-219));
+// crear un numero random
+console.log(Math.floor(Math.random() * 11));
+
+let cadenas1 = "27.32";
+let resultado = parseInt(cadenas1)
+console.log(resultado);
+
+let cadenas2 = "27.32";
+let resultado2 = parseFloat(cadenas2)
+console.log(typeof resultado2 + " " + resultado2);
