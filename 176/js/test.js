@@ -9,6 +9,29 @@ console.log(peopleCourse);
 const NAME = "Jeremy Smith";
 //typeof es para que me diga que tipo de valor es... String, Number or Boolean
 console.log(NAME);
+console.log(NAME.indexOf(' ') === -1);
+console.log(NAME.indexOf(' '));
+const data = {
+    Name: "Jeremy",
+    Edad: 34,
+    Sexo: "Female"
+};
+
+const data2 = [
+    {
+        Name: "Jeremy",
+        Edad: 34
+    },
+    {
+        Name: "Alice",
+        Edad: 28
+    }
+];
+
+console.log(data2.indexOf(data2.Name));
+const index = data2.findIndex(item => item.Name === "Alice");
+console.log(index);
+
 
 const Edad = "Edad";
 const Numero = "Numero";
@@ -175,3 +198,31 @@ console.log(resultado);
 let cadenas2 = "27.32";
 let resultado2 = parseFloat(cadenas2)
 console.log(typeof resultado2 + " " + resultado2);
+
+const Bolvert = "12345";
+if (Bolvert.length == 5){
+    console.log("La Bolvert está correcta", Bolvert);
+    // return Bolvert;
+} else {
+    console.log("La Bolvert está incorrecta", Bolvert);
+}
+
+if (Bolvert.length != 5){
+    console.log("La Bolvert está incorrecta", Bolvert);
+} else {
+    console.log("La Bolvert está correcta", Bolvert);
+}
+
+if (Bolvert.length >= 5 && Bolvert.length <= 10) {
+    console.log("La Bolvert está correcta", Bolvert);
+} else {
+    console.log("La Bolvert está incorrecta", Bolvert);
+}
+console.log(Bolvert);
+
+const password = "password"
+
+if (password === password) {
+    console.log("Password correcto", password);
+}
+// Los if anidados son if dentro de otros, condiciones dentro de otras
