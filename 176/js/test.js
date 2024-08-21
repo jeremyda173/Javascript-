@@ -226,3 +226,83 @@ if (password === password) {
     console.log("Password correcto", password);
 }
 // Los if anidados son if dentro de otros, condiciones dentro de otras
+
+
+// Practicando el mapeo de datos
+const nombres = ["ana", "beto", "carla", "diego"];
+
+const nombreMa = nombres.map(nombre => nombre.toUpperCase());
+console.log(nombreMa)
+
+const productos = [
+    { nombre: "Camisa", precio: 20 },
+    { nombre: "Pantalones", precio: 30 },
+    { nombre: "Zapatos", precio: 50 }
+];
+
+const productosPlus = productos.map(product => {
+    return {
+        Nombre: product.nombre,
+        NuevoPrecio: product.precio * 1.10
+    };
+});
+console.log(productosPlus);
+
+const personas = [
+    { nombre: "Ana", fechaDeNacimiento: "1990-05-15" },
+    { nombre: "Beto", fechaDeNacimiento: "1985-12-22" },
+    { nombre: "Carla", fechaDeNacimiento: "2000-03-10" }
+];
+
+const personEdad = personas.map(person => {
+    const añoActual = new Date().getFullYear();
+    const añoNacimiento = new Date(person.fechaDeNacimiento).getFullYear();
+    const edad = añoActual - añoNacimiento;
+    return {
+        Persona: person.nombre,
+        Edad: edad,
+    }
+});
+console.log(personEdad);
+
+const tareas = [
+    { nombre: "Lavar la ropa", estado: "completada", prioridad: "alta" },
+    { nombre: "Limpiar la casa", estado: "pendiente", prioridad: "media" },
+    { nombre: "Hacer la compra", estado: "completada", prioridad: "baja" },
+    { nombre: "Pagar facturas", estado: "completada", prioridad: "alta" }
+];
+
+const tarea = tareas.filter(tareas => tareas.estado === 'completada' && tareas.prioridad === 'alta').map(tareas => tareas.nombre);
+console.log(tarea);
+
+// Volviendo con los IF
+
+let Name = 223
+let Edades = 222
+let Tareas = 223
+
+if (Name === Edades && Name === Tareas) {
+    console.log('Esto es verdadero');
+} else if (Edades === Tareas) {
+    console.log('Estas son iguales');
+} else {
+    console.log('Ninguna son iguales');
+}
+
+if (Name && Edades === Tareas) {
+    console.log('Usando el OR ||');
+} else if (Tareas === Name) {
+    console.log('Usando el Y &&');
+}
+
+const edad = 99;
+
+if (edad == 0) {
+    console.log('Esta cuenta es falsa');
+} else if (edad > 100) {
+    console.log('Esta persona tiene más de 100 años');
+} else if (edad < 0) {
+    console.log('Edad no válida');
+} else {
+    console.log('Esta persona tiene una edad normal');
+}
