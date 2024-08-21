@@ -225,3 +225,4 @@ const password = "password"
 if (password === password) {
     console.log("Password correcto", password);
 }
+// Los if anidados son if dentro de otros, condiciones dentro de otras
