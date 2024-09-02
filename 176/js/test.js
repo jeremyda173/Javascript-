@@ -295,6 +295,18 @@ if (Name && Edades === Tareas) {
     console.log('Usando el Y &&');
 }
 
+let numer1 = 21;
+let numer2 = 21;
+let strings = "Jeremy";
+
+if (numer1 === 21 && numer2 === 21) {
+    console.log('Usando el operador &&');
+} else if (numer1 === numer2 || numer2 === strings) {
+    console.log('Usando el operador ||');
+} else {
+    console.log('No se tomó ninguna condición');
+}
+
 const edad = 99;
 
 if (edad == 0) {
