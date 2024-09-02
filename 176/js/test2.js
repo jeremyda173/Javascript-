@@ -116,5 +116,17 @@ console.log (alfa.sort());
 // Metodo .splice() --> Se utiliza para index, agregar y eliminar
 
 const prueba = [1,2,3,4,5,6,7,8,9,10];
-console.log (prueba.splice(3,2, 'Pluma'));
+console.log (prueba.splice(3,1, 'Pluma'));
 console.log(prueba);
+
+// Metodo .every() --> Se utiliza para cumplir condiciones generales de los arrays
+
+const edades2 = [2,5,15,8,3];
+
+const mayoresMenores = (edad) => {
+  mayor = edad < 18;
+  return edad + ' ' + " Si es mayor";
+}
+
+let pruerba = (edades2.every(mayoresMenores));
+console.log(pruerba);
