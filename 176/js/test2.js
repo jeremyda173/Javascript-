@@ -121,12 +121,47 @@ console.log(prueba);
 
 // Metodo .every() --> Se utiliza para cumplir condiciones generales de los arrays
 
-const edades2 = [2,5,15,8,3];
+const edades2 = [32,45,155,68,33];
 
-const mayoresMenores = (edad) => {
-  mayor = edad < 18;
-  return edad + ' ' + " Si es mayor";
-}
+const mayoresMenores = (edad) => edad >= 18;
 
 let pruerba = (edades2.every(mayoresMenores));
 console.log(pruerba);
+
+const violet = ['Ana','Camila','6','2','Z'];
+violet.forEach(valor => console.log(valor));
+
+function retornaValores(valor, indice) {
+  console.log(`${indice} tiene el valor de: ${valor}`);
+}
+violet.forEach(retornaValores);
+
+const vendedor = violet.map(function(valor){
+  return valor
+});
+console.log(vendedor);
+
+const multiple = edades2.map(function(valor){
+return valor * 2;
+});
+console.log(multiple);
+
+const multipleF = edades2.map((valor) => {
+  return valor * 2;
+});
+console.log(multipleF);
+
+
+const clientes = {
+  name: 'Marcos',
+  actividad: 'Cargando',
+  age: 21
+};
+
+console.log(clientes.age);
+const dataName = clientes.name + ' se encuentra ' + clientes.actividad
+console.log(dataName);
+
+clientes.Presupuesto = 32.12;
+clientes.age = 22;  
+console.log(clientes);
