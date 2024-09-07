@@ -165,3 +165,121 @@ console.log(dataName);
 clientes.Presupuesto = 32.12;
 clientes.age = 22;  
 console.log(clientes);
+
+
+const barca =  {
+  name: 'Pedri',
+  Age: 21,
+  Team: 'Barcelona',
+  Position: 'MC',
+  Money: {
+    Week: '200,000$',
+    Month: '750,000',
+    Year: '20,000,000'
+  }
+}
+console.log(barca);
+
+const player = Object.values(barca).map(function(valor) {
+  return valor;
+});
+console.log(player);
+
+const players = Object.entries(barca).map(function([key, value]) {
+  return `${key}: ${value}`;
+});
+console.log(players);
+
+
+const alumno = {
+  nombre: 'Marcos',
+  apellido: 'Marquitos',
+  cursa: 'Ingenieria en Platanos',
+  notas: {
+    primerA: 8,
+    segundoA: 7.56,
+    tercerA: 8.99
+  },
+  sobrenombre: 'El pedo'
+}
+
+const notas4 = alumno.notas;
+console.log(notas4);
+
+console.log(alumno.notas.segundoA);
+
+const notas = Object.values(alumno.notas);
+
+let sumaTotal = 0;
+notas.map(function(valor) {
+  sumaTotal += valor;
+});
+
+const promedio = sumaTotal / notas.length;
+console.log('Promedio:', promedio.toFixed(2));
+console.log(promedio.toFixed(2));
+
+const nota = Object.values(alumno.notas);
+const promedios = nota.reduce(function(suma, valor) {
+  return suma + valor;
+}, 0) / nota.length;
+
+console.log('Promedio:', promedios.toFixed(1));
+
+const miArray = [2];
+const miArray2 = miArray;
+
+if(miArray === miArray2){
+  console.log('Son iguales');
+} else {
+  console.log('Son diferentes');
+}
+
+const result = {
+  names: 'Jeremy',
+  edad: [3],
+  notas: [7],
+};
+
+// if(result.names.length === []){
+//   console.log('Si');
+// } else {
+//   console.log('No');
+// }
+
+const A = 100
+
+for(let i=0; i <= 10; i+=2){
+  console.log('Incremento', i);
+}
+
+for(let i=0; i <= A; i++){
+  if(i % 2 === 0 && i > 0){
+    console.log(`${i} es un numero par`);
+  } else if(i % 2 === 1){
+    console.log(`${i} es un numero impar`);
+  }
+}
+
+let B = 35;
+for (let j = 0; j <= B; j++) {
+  if (j % 3 === 0 && j % 5 === 0 && j > 0) {
+    console.log(`${j} FizzBuzz`);
+  } else if (j % 3 === 0 && j > 0) {
+    console.log(`${j} Fizz`);
+  } else if (j % 5 === 0 && j > 0) {
+    console.log(`${j} Buzz`);
+  }
+}
+
+for (let i = 1; i <= 20; i++) {
+  if (i % 3 === 0 && i % 5 === 0) {
+      console.log("FizzBuzz");
+  } else if (i % 3 === 0) {
+      console.log("Fizz");
+  } else if (i % 5 === 0) {
+      console.log("Buzz");
+  } else {
+      console.log(i);
+  }
+}
