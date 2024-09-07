@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculando</title>
+    <link rel="stylesheet" href="./../style/style.css">
+</head>
+<body>
+    <form id="formulario">
+        <label>Valor A (para Área):</label>
+        <input type="number" id="valorA" name="valorA" placeholder="Calcular Área">
+        <button type="button" id="calcularArea">Calcular Área</button>
+        
+        <label>Valor B (para Perímetro):</label>
+        <input type="number" id="valorP" name="valorB" placeholder="Calcular Perímetro">
+        <button type="button" id="calcularPerimetro">Calcular Perímetro</button>
+    </form>
+
+    <p id="resultado"></p>
+
+    <script>
+
+        const valorA = document.getElementById("valorA");
+        const valorP = document.getElementById("valorP");
+        const resultado = document.getElementById("resultado");
+
+        // Función para calcular el área
+        document.getElementById("calcularArea").addEventListener("click", function() {
+            const valor = parseFloat(valorA.value);
+            if (!isNaN(valor)) {
+                const area = valor * valor;
+                resultado.textContent = "El área es: " + area;
+            } else {
+                resultado.textContent = "Por favor ingresa un valor válido para el área.";
+            }
+        });
+
+        // Función para calcular el perímetro
+        document.getElementById("calcularPerimetro").addEventListener("click", function() {
+            const valor = parseFloat(valorP.value); 
+            if (!isNaN(valor)) {
+                const perimetro = valor * 4;
+                resultado.textContent = "El perímetro es: " + perimetro;
+            } else {
+                resultado.textContent = "Por favor ingresa un valor válido para el perímetro.";
+            }
+        });
+    </script>
+</body>
+</html>
