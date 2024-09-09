@@ -190,7 +190,6 @@ const players = Object.entries(barca).map(function([key, value]) {
 });
 console.log(players);
 
-
 const alumno = {
   nombre: 'Marcos',
   apellido: 'Marquitos',
@@ -282,4 +281,20 @@ for (let i = 1; i <= 20; i++) {
   } else {
       console.log(i);
   }
+}
+
+const data = ['FizzBuzz', 'FizzBuzz', 'FizzBuzz', 'FizzBuzz', 'FizzBuzz', 'FizzBuzz', 'FizzBuzz'];
+console.log(data);
+
+for (let i = 0; i < 2; i++) {
+  console.log(data[i]);
+}
+
+for (let i = 0; i < data.length; i++) {
+  console.log(data.join(' --> ')[i]);
+}
+
+for (let i = 0; i < data.length; i++) {
+  const endData = data[i].split('\n');
+  console.log(endData);
 }
