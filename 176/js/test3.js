@@ -107,3 +107,70 @@ while (A <= 16) {
     // let H = A++
     // console.log(H);
 }
+
+// Juego con While
+
+const numeroSecreto = Math.floor(Math.random() * 10);
+console.log(numeroSecreto);
+
+let numeroRobot = Math.floor(Math.random() * 10);
+console.log(numeroRobot);
+
+let intentos = 0;
+while (numeroSecreto !== numeroRobot) {
+    console.log(`${numeroRobot} contra ${numeroSecreto}`);
+    numeroRobot = Math.floor(Math.random() * 10);
+    intentos++
+}
+console.log(`${numeroRobot} contra ${numeroSecreto} fue el resultado final con ` + intentos + ' intentos');
+// if (numeroRobot === numeroSecreto){
+//     console.log(`Resultado final fue un empate: ${numeroRobot} - ${numeroSecreto}`);
+// }
+
+//Break =  Rompoer  un bucle
+for (var i = 0; i <= 20; i++) {
+    console.log(i);
+    if (i === 15){ 
+        console.log('Limite: ' + i);
+        break;
+    }
+}
+
+// Continue = Saltar ciclos
+for (var i = 0; i <= 20; i++) {
+    if(i % 5 === 0) continue;
+    console.log(i);
+}
+
+// for of
+let cadena = 'Buenas Tardes';
+for (let element of cadena){
+    console.log(element);
+}
+
+console.log(miArray3);
+for (let element of miArray3){
+    let sumada = 0;
+    for (let numero of element){
+        sumada += numero
+    }
+    console.log(sumada);
+}
+
+const Users = {
+      nombre: "Juana",
+      edad: 21,
+      numero: "0-000-000-0000",
+}
+  
+for(let elemento of Object.keys(Users)){
+    console.log(elemento);
+}
+
+for(let elemento of Object.keys(Users)){
+    console.log(`${elemento}: ${Users[elemento]}`);
+}
+
+for(let elemento of Object.values(Users)){
+    console.log(elemento);
+}
