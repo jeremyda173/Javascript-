@@ -98,3 +98,12 @@ for (let i = 0; i < miArray3.length; i++) {
     }
 }
 console.log(total2);
+
+// Bucle While
+A = 15
+B = 14
+while (A <= 16) {
+    console.log(`Funciona ${A++}`);
+    // let H = A++
+    // console.log(H);
+}
