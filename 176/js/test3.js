@@ -174,3 +174,8 @@ for(let elemento of Object.keys(Users)){
 for(let elemento of Object.values(Users)){
     console.log(elemento);
 }
+
+const UsersValue = Object.values(Users);
+console.log(UsersValue);
+const UsersKey = Object.keys(Users);
+console.log(UsersKey);
