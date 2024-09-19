@@ -239,3 +239,30 @@ console.log(isValidPassword('Juantio', "8uantio4"));
 // console.log(isValidPassword('Juantio', "8uantio4"));
 
 // -------- Ejercicio 4 -------------
+
+// Crear función que resiva un array y saque el promedio de un array
+
+// function sumaArrayM(array){
+//   const result = array.length;
+//   let base = 0;
+//   for(let element of array){
+//     base = (base + element) / result;
+//     console.log(base);
+//     return base;
+//   }
+// }
+// sumaArrayM([5, 5, 5]);
+
+function sumaArrayM(array){
+  let base = 0;
+  for(let element of array){
+    base = base + element;
+  }
+  return (base / array.length);
+}
+console.log(sumaArrayM([5,10,10,10,10]));
+
+// -------- Ejercicio 5 -------------
+
+const Abecedario = ['A,B,C,D,E,F,G,H,I,J,K,L,M,N,O,P,Q,R,S,T,U,V,W,X,Y,Z'];
+
