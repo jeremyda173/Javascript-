@@ -1,30 +1,30 @@
 // Episodio 59 en adelante
 
-const miArray = [
-  [1, 2, 3],
-  [4, 5, 6],
-  [7, 8, 9],
-];
-console.log(miArray);
-for (let i = 0; i < miArray.length; i++) {
-  const miArray2 = miArray[i].reverse();
-  console.log(miArray2);
-}
-for (let i = 0; i < miArray.length; i++) {
-  console.log(miArray[0]);
-  console.log(miArray[1]);
-  console.log(miArray[2]);
-}
+// const miArray = [
+//   [1, 2, 3],
+//   [4, 5, 6],
+//   [7, 8, 9],
+// ];
+// console.log(miArray);
+// for (let i = 0; i < miArray.length; i++) {
+//   const miArray2 = miArray[i].reverse();
+//   console.log(miArray2);
+// }
+// for (let i = 0; i < miArray.length; i++) {
+//   console.log(miArray[0]);
+//   console.log(miArray[1]);
+//   console.log(miArray[2]);
+// }
 
-const m = [
-  [1, 2, 3],
-  [4, 5, 6],
-  [7, 8, 9],
-];
+// const m = [
+//   [1, 2, 3],
+//   [4, 5, 6],
+//   [7, 8, 9],
+// ];
 
-for (let i = 0; i < miArray.length; i++) {
-  console.log(m[i]);
-}
+// for (let i = 0; i < miArray.length; i++) {
+//   console.log(m[i]);
+// }
 
 // Ejercicio 1
 
@@ -89,15 +89,38 @@ const miArray3 = [
   [10, 22, 33, 44],
 ];
 let total2 = 0;
+let j8 = 0;
 for (let i = 0; i < miArray3.length; i++) {
   const fila = miArray3[i];
   console.log(fila);
   for (let j = 0; j < fila.length; j++) {
-    total2 += fila[j];
-    console.log(total2);
+    j8 += fila[j];
   }
+  console.log(j8);
+  total2 = total2 + j8;
+  j8 = 0;
 }
 console.log(total2);
+
+const miArray = [
+  [1,2,3],
+  [4,5,6],
+  [7,8],
+  [10,22,33,44]
+]
+
+let total = 0;
+
+for (let i = 0; i < miArray.length; i++) {
+  const fila = miArray[i];
+  console.log(fila)
+  for (let j = 0; j < fila.length; j++) {
+      total += fila[j];
+      console.log(total);
+  }
+}
+
+console.log(total); // 145
 
 // Bucle While
 A = 15;
