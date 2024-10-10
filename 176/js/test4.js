@@ -19,3 +19,5 @@ function saludar (){
 saludar();
 let saludo = "Hello, world";
 console.log(saludo);
+
+// Capitulo 75... No usar VAR, no siempre es la solucin y su scope es muy diferente.
