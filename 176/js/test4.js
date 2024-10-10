@@ -9,3 +9,13 @@ const random = Math.floor(Math.random() * cadena.length);
 }
 
 console.log(checkArray([1,2,3,'a','b','c','d','e']));
+
+// Funcion Scop() --> El lugar donde defina una variable determina si podre o no accederla
+
+function saludar (){
+    let saludo = "Hello, world in function";
+    console.log(saludo);
+}
+saludar();
+let saludo = "Hello, world";
+console.log(saludo);
