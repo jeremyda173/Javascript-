@@ -287,4 +287,22 @@ console.log(sumaArrayM([5,10,10,10,10]));
 
 // -------- Ejercicio 5 -------------
 
-const Abecedario = ['A,B,C,D,E,F,G,H,I,J,K,L,M,N,O,P,Q,R,S,T,U,V,W,X,Y,Z'];
+// Dada una cadena de texto cualquiera, evalua si dicha cadena contiene al menos 1 caracter de cada letra del alfabeto, si esto ocurre, deberia regresar true, de otro modo si falta aunque sea un solo caracter debera regresar false.
+
+// const Abecedario = ['A,B,C,D,E,F,G,H,I,J,K,L,M,N,O,P,Q,R,S,T,U,V,W,X,Y,Z'];
+
+
+function revisionArray(cTexto){
+  const Abecedario = ['A,B,C,D,E,F,G,H,I,J,K,L,M,N,O,P,Q,R,S,T,U,V,W,X,Y,Z'];
+  for (let caracters of Abecedario){
+    console.log(caracters);
+     if (cTexto.indexOf(caracters) === -1){
+      return false;
+     } 
+    // else {
+    //   return true;
+    //  }
+  }
+  return true;
+}
+console.log(revisionArray("A,B,C,D,E,F,G,H,I,J,K,L,M,N,O,P,Q,R,S,T,U,V,W,X,Y,Z"));
