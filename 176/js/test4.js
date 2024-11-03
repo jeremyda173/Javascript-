@@ -67,3 +67,29 @@ const theOperations = [suma, resta, multiplicacion, division];
 for (let lasFuncion of theOperations) {
     console.log(lasFuncion(8,4));
 }
+
+// Pasar argumentos a una función
+
+function repetir(funcion, numero){
+  for(let i = 0; i < numero; i++) {
+    funcion();
+  }
+}
+
+function hola(){
+  console.log("Hola buenas noches");
+}
+
+function adios(){
+  console.log("Adios buenas noches");
+}
+
+repetir(hola, 1);
+
+function retorno(){
+  return function(){
+    console.log("Retorno");
+  }
+}
+
+retorno();
