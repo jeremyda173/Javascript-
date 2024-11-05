@@ -119,3 +119,6 @@ function valorEntero(n1, n2){
 
 const primerValor = valorEntero(0, 100);
 console.log(primerValor(1)); 
+
+//Funciones CallBack
+
