@@ -92,4 +92,30 @@ function retorno(){
   }
 }
 
-retorno();
+const mifunc = retorno();
+mifunc();
+
+// Retorno de función anonima, tengo que asignarla a una variable o constante para usarla, esto porque se necesita llamar.
+
+function multi(num1){
+  return function(num2){
+    return num1 + num2;
+  }
+}
+
+const resulta = multi(99);
+
+// const resulta = function(num2){
+//   return num2 + 2
+// };
+
+console.log(resulta(2));
+
+function valorEntero(n1, n2){
+  return function(n3){
+    return (n3 >= n1 && n3 <= n2);
+  }
+}
+
+const primerValor = valorEntero(0, 100);
+console.log(primerValor(1)); 
