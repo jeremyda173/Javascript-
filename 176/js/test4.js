@@ -121,3 +121,7 @@ const primerValor = valorEntero(0, 100);
 console.log(primerValor(1)); 
 
 //Funciones CallBack
+
+function CallBack(){
+  console.log('Funciones CallBack');
+}
