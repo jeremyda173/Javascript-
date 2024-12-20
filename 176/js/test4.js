@@ -12,7 +12,7 @@ console.log(checkArray([1,2,3,'a','b','c','d','e']));
 
 // Funcion Scop() --> El lugar donde defina una variable determina si podre o no accederla
 
-function saludar (){
+function saludar (){1
     let saludo = "Hello, world in function";
     console.log(saludo);
 }
