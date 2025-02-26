@@ -1,7 +1,7 @@
 // Aprendiendo a tener los datos en una base de datos
 
 const express = require('express');
-const mysql = require('mysql2'); // Agrega el paquete mysql2
+const mysql = require('mysql2');
 const app = express();
 const PORT = 3000;
 const cors = require('cors');
