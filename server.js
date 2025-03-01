@@ -1,6 +1,6 @@
 // Aprendiendo a tener los datos en una base de datos
 
-const express = require('express');
+// const express = require('express');
 const mysql = require('mysql2');
 const app = express();
 const PORT = 3000;
@@ -34,7 +34,6 @@ app.post('/guardarDatos', (req, res) => {
 
     console.log('Datos recibidos del cliente:', userData);
 
-    // Insertar datos en la base de datos
     const sql = 'INSERT INTO usuarios (nombre, edad, email, password) VALUES (?, ?, ?, ?)';
     db.query(sql, [userData.name, userData.age, userData.email, userData.pass], (err, result) => {
         if (err) {
